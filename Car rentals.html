@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+
+.rental-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rental-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 10px;
+}
+
+button {
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+footer {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+
+    </style>
+  <header>
+    <h1>Car Rentals</h1>
+    <p>Find the perfect car for your journey!</p>
+  </header>
+  <main>
+    <section class="rental-form">
+      <h2>Book Your Car</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="pickup-date">Pick-Up Date:</label>
+        <input type="date" id="pickup-date" name="pickup-date" required>
+
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+
+        <label for="car-type">Car Type:</label>
+        <select id="car-type" name="car-type" required>
+          <option value="" disabled selected>Select a car type</option>
+          <option value="economy">Economy</option>
+          <option value="compact">Compact</option>
+          <option value="suv">SUV</option>
+          <option value="luxury">Luxury</option>
+          <option value="van">Van</option>
+        </select>
+
+        <label for="extras">Extras:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="gps" name="extras" value="gps">
+          <label for="gps">GPS</label><br>
+          <input type="checkbox" id="child-seat" name="extras" value="child-seat">
+          <label for="child-seat">Child Seat</label><br>
+          <input type="checkbox" id="insurance" name="extras" value="insurance">
+          <label for="insurance">Insurance</label>
+        </div>
+
+        <label for="comments">Special Requests:</label>
+        <textarea id="comments" name="comments" placeholder="Enter any special requests"></textarea>
+
+        <button type="submit">Reserve Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Car Rentals. All rights reserved.</p>
+  </footer>
+</body>
+</html>

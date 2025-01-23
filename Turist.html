@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+
+.booking-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #28a745;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+}
+
+    </style>
+  <header>
+    <h1>Explore the World</h1>
+    <p>Plan your dream vacation with us!</p>
+  </header>
+  <main>
+    <section class="booking-form">
+      <h2>Plan Your Trip</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="" disabled selected>Select a destination</option>
+          <option value="paris">Paris</option>
+          <option value="new-york">New York</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="sydney">Sydney</option>
+          <option value="rome">Rome</option>
+        </select>
+
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="end-date" required>
+
+        <label for="services">Additional Services:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="guide" name="services" value="guide">
+          <label for="guide">Tour Guide</label><br>
+          <input type="checkbox" id="transport" name="services" value="transport">
+          <label for="transport">Transport</label><br>
+          <input type="checkbox" id="meals" name="services" value="meals">
+          <label for="meals">Meals</label>
+        </div>
+
+        <label for="comments">Special Requests:</label>
+        <textarea id="comments" name="comments" placeholder="Enter any special requests"></textarea>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Explore the World. All rights reserved.</p>
+  </footer>
+</body>
+</html>

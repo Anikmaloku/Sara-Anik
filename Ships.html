@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruise Packages</title>
+    <link rel="stylesheet" href="cruise-styles.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.cruise-packages {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.package-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-title {
+    font-size: 24px;
+    margin: 16px 16px 8px;
+    color: #333;
+}
+
+.package-description {
+    font-size: 16px;
+    margin: 0 16px 16px;
+    color: #666;
+}
+
+.cta-button {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 16px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+    </style>
+    <section class="cruise-packages">
+        <div class="container">
+            <h1 class="section-title">Explore Our Cruise Packages</h1>
+            <div class="packages">
+                <div class="package-card">
+                    <img src="services.png" alt="Caribbean Cruise">
+                    <h2 class="package-title">Caribbean Cruise</h2>
+                    <p class="package-description">Experience the crystal-clear waters and vibrant culture of the Caribbean on a 7-day luxury cruise.</p>
+                    <button class="cta-button">Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <img src="services1.png" alt="Mediterranean Cruise">
+                    <h2 class="package-title">Mediterranean Cruise</h2>
+                    <p class="package-description">Sail through the historic cities and breathtaking coasts of the Mediterranean on a 10-day journey.</p>
+                    <button class="cta-button">Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <img src="services3.png" alt="Alaskan Cruise">
+                    <h2 class="package-title">Alaskan Cruise</h2>
+                    <p class="package-description">Embark on a scenic adventure through the icy fjords and majestic landscapes of Alaska.</p>
+                    <button class="cta-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

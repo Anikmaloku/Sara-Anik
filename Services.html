@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef5f9;
+            color: #333;
+        }
+        .services-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .services-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .service-icon {
+            font-size: 3em;
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .service-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+            .cta-button{
+                display: inline-block; 
+    background-color: #007BFF; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 12px 24px;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+            }
+            
+
+
+
+.cta-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+    text-decoration: none; 
+}
+
+.cta-button:active {
+    background-color: #003f7f; 
+    transform: scale(0.95); 
+}
+        
+    </style>
+</head>
+<body>
+    <section class="services-section">
+        <h1>Our Travel Services</h1>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">✈️</div>
+                <h2 class="service-title">Flight Booking</h2>
+                <p class="service-description">Ne ofrojme qmimet me te mira per bileten tuaj</p>
+                <a href="Book your ticket.html"  A class="cta-button">Book your Flight</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏨</div>
+                <h2 class="service-title">Hotel Reservations</h2>
+                <p class="service-description">Rezervoni akomodime komode dhe luksoze në mbarë botën.</p>
+                <a href="Hotel booking.html" a class="cta-button">Book your hotel</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h2 class="service-title">Car Rentals</h2>
+                <p class="service-description">Eksploroni destinacionet me makina me qira të përshtatshme dhe të përballueshme. </p>
+                <a href="Car rentals.html" a class="cta-button">Car rentals</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌍</div>
+                <h2 class="service-title">Guided Tours</h2>
+                <p class="service-description">Bashkohuni me turne emocionuese me udhërrëfyes dhe zbuloni gurët e çmuar të fshehur.</p>
+                <a href="Turist.html" a class="cta-button">Tuourist</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h2 class="service-title">Travel Planning</h2>
+                <p class="service-description">Itinerare udhëtimesh të personalizuara për pushimet tuaja të ëndrrave.</p>
+                
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛳️</div>
+                <h2 class="service-title">Cruise Packages</h2>
+                <p class="service-description">Shijoni eksperienca luksoze lundrimi në destinacione mahnitëse.</p>
+                <a href="Ships.html" a class="cta-button">Cruise</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
